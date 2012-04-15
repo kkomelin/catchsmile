@@ -2,7 +2,10 @@ core            = "7.x"
 description     = ""
 name            = "Catch Smile"
 
+dependencies[] = views (3.x)
+dependencies[] = lightbox2
 
+files[] = views/catchsmile.views_default.inc
 
 
 
