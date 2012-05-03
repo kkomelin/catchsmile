@@ -108,7 +108,7 @@ function catchsmile_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['field_language'] = 'und';
-  $handler->display->display_options['path'] = 'catch-a-smile-photo-gallery';
+  $handler->display->display_options['path'] = 'node';
   $translatables['catch_a_smile_photo_gallery'] = array(
     t('Master'),
     t('Catch a Smile Photo Gallery'),
