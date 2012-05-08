@@ -9,3 +9,64 @@ function catchsmile_views_api() {
     'path' => drupal_get_path('module', 'catchsmile') . '/views',
   );
 }
+
+
+/**
+ * Implements hook_page_build().
+ */
+function catchsmile_page_build(&$page) {
+  if(arg(0) == 'node' && user_is_anonymous()) {
+    drupal_add_library('system', 'jquery.cookie', TRUE);
+    drupal_add_js(
+      array(
+        'catchsmile' => array(
+          'serviceUri' => url('endpoint1/catchsmile/calculate_count'),
+          'refreshInterval' => 3000
+        )
+      ),
+      'setting'
+    );
+    drupal_add_js(drupal_get_path('module', 'catchsmile') . '/js/catchsmile.js');
+  }
+}
+
+/**
+ * Implements hook_services_resources().
+ */
+function catchsmile_services_resources() {
+  return array(
+    'catchsmile' => array(
+      'actions' => array(
+        'calculate_count' => array(
+          'access callback' => '_catchsmile_access',
+          'access arguments' => array('view'),
+          'access arguments append' => TRUE,
+          'callback' => '_catchsmile_calculate_count',
+        ),
+      ),
+    ),
+  );
+}
+
+/**
+ * Action calculate_count callback.
+ */
+function _catchsmile_calculate_count() {
+  $count = db_select('node')
+    ->condition('type', 'catchsmile')
+    ->countQuery()
+    ->execute()
+    ->fetchField();
+
+  $result = new stdClass();
+  $result->count = $count;
+
+  return $result;
+}
+
+/**
+ * Access callback.
+ */
+function _catchsmile_access($op) {
+  return TRUE;
+}
