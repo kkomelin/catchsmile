@@ -15,8 +15,9 @@ function catchsmile_views_api() {
  * Implements hook_page_build().
  */
 function catchsmile_page_build(&$page) {
-  if(arg(0) == 'node' && user_is_anonymous()) {
+  if (arg(0) == 'node' && user_is_anonymous()) {
     drupal_add_library('system', 'jquery.cookie', TRUE);
+    // Send necessary parameters to the JavaScript.
     drupal_add_js(
       array(
         'catchsmile' => array(

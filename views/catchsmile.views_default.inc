@@ -1,6 +1,10 @@
 <?php
 
 /**
+ * @file View for Catch a Smile Photo Gallery.
+ */
+
+/**
  * Implements hook_views_default_views.
  *
  * @return array
