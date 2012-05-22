@@ -11,6 +11,7 @@ The module contains:
 Dependencies:
 views (3.x)
 lightbox2
+services (3.x)
 
 I provide the module "AS IS" without any warranty.
 Probably GitHub is temporary storage for this module because of drupal rules.

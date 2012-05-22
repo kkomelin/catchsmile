@@ -1,11 +1,9 @@
 core            = "7.x"
-description     = ""
+description     = "Demo project for my presentation at DrupalConf Moscow 2012."
 name            = "Catch Smile"
 
 dependencies[] = views (3.x)
 dependencies[] = lightbox2
+dependencies[] = services (3.x)
 
 files[] = views/catchsmile.views_default.inc
-
-
-
