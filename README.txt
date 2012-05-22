@@ -1,7 +1,6 @@
-Catch a Smile Drupal 7 module (demo project for DrupalConf Moscow 2012)
+Catch a Smile Drupal 7 module
 
-I developed it for my presentation at DrupalConf Moscow 2012 (02.06.2012).
-Feel free to contact with me using http://komelin.com/contact if you have any questions.
+Part of demo project for DrupalConf Moscow 2012 (02.06.2012).
 
 The module contains:
 1) Views plugin for Catch a Smile Photo Gallery.
@@ -15,3 +14,7 @@ services (3.x)
 
 I provide the module "AS IS" without any warranty.
 Probably GitHub is temporary storage for this module because of Drupal rules.
+
+Feel free to contact with me using http://komelin.com/contact if you have any questions.
+
+You can find WP7 application that uses services of this module at https://github.com/konstantin-komelin/catchsmile-wp7
