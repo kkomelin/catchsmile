@@ -1,5 +1,7 @@
 <?php
 
+define('CATCHSMILE_ENDPOINT_PATH', 'endpoint1');
+
 /**
  * Implements hook_views_api().
  */
@@ -21,7 +23,7 @@ function catchsmile_page_build(&$page) {
     drupal_add_js(
       array(
         'catchsmile' => array(
-          'serviceUri' => url('endpoint1/catchsmile/count'),
+          'serviceUri' => url(CATCHSMILE_ENDPOINT_PATH . '/catchsmile/count'),
           'refreshInterval' => 5000
         )
       ),
