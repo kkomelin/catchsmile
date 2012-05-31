@@ -3,10 +3,10 @@
 ### Description
 Part of demo project for DrupalConf Moscow 2012 (02.06.2012).
 
-The module contains:
-1. Views plugin for Catch a Smile Photo Gallery.
-2. Web service that calculates count of catchsmile nodes.
-3. JavaScript code that performs page refreshing if count of catchsmile nodes is changed.
+The module contains:  
+1.  Views plugin for Catch a Smile Photo Gallery.
+2.  Web service that calculates count of catchsmile nodes.
+3.  JavaScript code that performs page refreshing if count of catchsmile nodes is changed.
 
 ### Dependencies
 * views (3.x)
@@ -17,20 +17,20 @@ The module contains:
 1. Install Drupal 7
 2. Install and enable Catch Smile module and REST Server module and their dependencies.
 3. Add Services 3 REST endpoind (Path to endpoint = endpoint1)
-4. Configure formatters for the endpoint.  
-Response formatters:
-* json
-* xml
-Request parsing:
-* application/json
-* application/x-www-form-urlencoded
+4. Configure formatters for the endpoint.
+  - Response formatters:
+    + json
+    + xml
+  - Request parsing:
+    - application/json
+    - application/x-www-form-urlencoded
 5. Enable Service 3 resources:
-* catchsmile -> count
-* file -> create
-* node -> create
+  - catchsmile -> count
+  - file -> create
+  - node -> create
 6. Set permissions for an anonymous user:
-* Node -> CatchSmile Photo: Create new content
-* Sevices -> Save file information
+  - Node -> CatchSmile Photo: Create new content
+  - Sevices -> Save file information
 7. See Installation and configuration section of CatchSmile WP7 app to configure interoperability between these two apps.
 https://github.com/konstantin-komelin/catchsmile-wp7
 
