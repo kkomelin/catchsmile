@@ -3,7 +3,7 @@
 ### Description
 Part of demo project for DrupalConf Moscow 2012 (02.06.2012).
 
-The module contains:  
+The module contains:
 1.  Views plugin for Catch a Smile Photo Gallery.
 2.  Web service that calculates count of catchsmile nodes.
 3.  JavaScript code that performs page refreshing if count of catchsmile nodes is changed.
@@ -22,8 +22,8 @@ The module contains:
     + json
     + xml
   - Request parsing:
-    - application/json
-    - application/x-www-form-urlencoded
+    + application/json
+    + application/x-www-form-urlencoded
 5. Enable Service 3 resources:
   - catchsmile -> count
   - file -> create
