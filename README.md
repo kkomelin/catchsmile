@@ -18,10 +18,13 @@ The module contains:
 2. Install and enable Catch Smile module and REST Server module and their dependencies.
 3. Add Services 3 REST endpoind (Path to endpoint = endpoint1)
 4. Configure formatters for the endpoint.
+
   Response formatters:
+
     - json
     - xml
-  Request parsing:  
+  Request parsing:
+
     - application/json
     - application/x-www-form-urlencoded
 5. Enable Service 3 resources:
