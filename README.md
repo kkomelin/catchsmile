@@ -19,14 +19,9 @@ The module contains:
 3. Add Services 3 REST endpoind (Path to endpoint = endpoint1)
 4. Configure formatters for the endpoint.
 
-  Response formatters:
+  - Response formatters (json, xml)
+  - Request parsing (application/json, application/x-www-form-urlencoded)
 
-    - json
-    - xml
-  Request parsing:
-
-    - application/json
-    - application/x-www-form-urlencoded
 5. Enable Service 3 resources:
   - catchsmile -> count
   - file -> create
