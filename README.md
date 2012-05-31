@@ -17,7 +17,7 @@ The module contains:
 1. Install Drupal 7
 2. Install and enable Catch Smile module and REST Server module and their dependencies.
 3. Add Services 3 REST endpoind (Path to endpoint = endpoint1)
-4. Configure formatters for the endpoint.
+4. Configure formatters for the endpoint.  
 Response formatters:
 * json
 * xml
@@ -35,7 +35,7 @@ Request parsing:
 https://github.com/konstantin-komelin/catchsmile-wp7
 
 ### License
-I provide the module "AS IS" without any warranty.  
+I provide the module "AS IS" without any warranty.
 Probably GitHub is temporary storage for this module because of Drupal rules.
 
 ### Contacts
