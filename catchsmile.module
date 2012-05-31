@@ -45,6 +45,7 @@ function catchsmile_services_resources() {
           'access arguments'        => array('access content'),
           'access arguments append' => FALSE,
           'callback' => '_catchsmile_calculate_count',
+          'help' => 'Calculates quantity of catchsmile nodes.',
         ),
       ),
     ),
