@@ -34,7 +34,7 @@ https://github.com/konstantin-komelin/catchsmile-wp7
 
 ### License
 I provide the module "AS IS" without any warranty.
-Probably GitHub is temporary storage for this module because of Drupal rules.
+Use it as you wish.
 
 ### Contacts
 Feel free to contact with me using http://komelin.com/contact if you have any questions.
